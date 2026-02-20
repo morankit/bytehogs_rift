@@ -1,4 +1,5 @@
-const API_BASE = "http://localhost:8000";
+const API_BASE = "74.220.52.0/24
+74.220.60.0/24";
 
 import { useState, useMemo, useEffect, useRef } from "react";
 
