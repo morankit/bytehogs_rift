@@ -1,6 +1,14 @@
-const API_BASE = "74.220.52.0/24
-74.220.60.0/24";
+// Before:
+// const API_BASE = "localhost"; 
 
+// After (Correct way for Render):
+const API_BASE = "https://rift-backend-icc6.onrender.com";
+
+// Example of how you would use it in a fetch call:
+const response = await fetch(`${API_BASE}/upload`, {
+    method: 'POST',
+    // ... rest of your code
+});
 import { useState, useMemo, useEffect, useRef } from "react";
 
 const MOCK_SUMMARY = {
